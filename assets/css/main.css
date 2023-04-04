@@ -9,5 +9,21 @@
 }
 
 body {
-    height: 100%;
+    height: 100vh;
+    max-height: 100vh;
+}
+
+/* Demonstrate a "customized-scrollbar" scrollbar
+* (won't be visible otherwise if width/height is specified) */
+*::-webkit-scrollbar {
+width: 5px;
+height: 8px;
+padding-right: 12px;
+background-color: #F5F5F5; /* or add it to the track */
+}
+
+/* Add a thumb */
+*::-webkit-scrollbar-thumb {
+background: #D3D3D9;
+border-radius: 6px;
 }

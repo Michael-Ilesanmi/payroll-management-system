@@ -15,7 +15,7 @@
     grid-template-areas: 
         "nav nav"
         "side main"; 
-    @apply bg-[#EAEAEA] h-screen min-h-screen grid;
+    @apply bg-[#EAEAEA] h-screen min-h-screen grid fixed top-0 left-0 right-0 bottom-0;
 }
 .navbar {
     grid-area: nav;
@@ -23,6 +23,7 @@
 
 .sidebar {
     grid-area: side;
+    overflow-y: scroll;
 }
 .main_section {
     grid-area: main;
