@@ -12,8 +12,8 @@
                     @click="nav.open = !nav.open"
                 >
                     <li 
-                        :class="($route?.name == nav?.name) || $route?.name?.includes(`${nav?.name}-`) ? 'bg-[#E0E0E0] shadow-[inset_0px_-1px_0px_#D1D4DB]' : ''" 
-                        class="hover:bg-[#e0e0e050] text-[#212143] font-medium px-6 py-4 transition ease-linear flex items-center space-x-2 cursor-pointer"
+                        :class="($route?.name == nav?.name) || $route?.name?.includes(`${nav?.name}-`) ? 'bg-[#E0E0E0] shadow-[inset_0px_-1px_0px_#D1D4DB]' : 'hover:bg-[#e0e0e050]'" 
+                        class="text-[#212143] font-medium px-6 py-4 transition ease-linear flex items-center space-x-2 cursor-pointer"
                     >
                             <Icon :name="nav?.icon" size="1.3em" />
                             <span>{{ nav?.title }}</span>
@@ -30,8 +30,8 @@
                             :to="{name: item?.name ?? false}"
                         >
                             <li 
-                                :class="$route?.name == item.name ? 'bg-[#D3D3D9]' : ''" 
-                                class="hover:bg-[#e0e0e050] text-[#212143] font-medium py-2 px-4 m-2 rounded-md text-sm transition ease-linear cursor-pointer"
+                                :class="$route?.name == item.name ? 'bg-[#D3D3D9]' : 'hover:bg-[#e0e0e050]'" 
+                                class="text-[#212143] font-medium py-2 px-4 m-2 rounded-md text-sm transition ease-linear cursor-pointer"
                             >
                                 {{item?.title}}
                             </li>
