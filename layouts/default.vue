@@ -27,5 +27,6 @@
 }
 .main_section {
     grid-area: main;
+    @apply overflow-y-scroll pb-48;
 }
 </style>
